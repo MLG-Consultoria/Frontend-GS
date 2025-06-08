@@ -1,0 +1,87 @@
+.faq-topo {
+  background: linear-gradient(to right, #000000, #00ff00);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px #00ff00;
+}
+
+.faq-topo h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-topo input {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Conteúdo */
+.faq-conteudo {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.faq-conteudo h2 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+/* Lista de perguntas */
+.faq-lista {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.faq-item {
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 0 1 45%;
+  min-width: 250px;
+  transition: all 0.3s ease;
+}
+
+/* Botão da pergunta */
+.faq-pergunta {
+  background: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  color: white;
+}
+
+/* Resposta oculta inicialmente */
+.faq-resposta {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  background-color: #000000;
+  margin-top: 8px;
+  border-left: 3px solid #00ff00;
+  padding: 0 12px;
+  border-radius: 6px;
+}
+
+/* Quando estiver aberta */
+.faq-resposta.aberto {
+  padding: 10px 12px;
+}
