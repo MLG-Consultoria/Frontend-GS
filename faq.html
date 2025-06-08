@@ -1,32 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/conteudo-faq.css">
-    <title>FAQ</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/conteudo-faq.css">
+	<title>FAQ</title>
 </head>
+
 <body>
-  <header class="topo">
-    <div class="logo">
-      <img src="images/logos/Logo-MLG.jpeg" alt="Logo da equipe" />
-    </div>
-    <nav class="menu-main">
-      <a href="index.html">Home</a>
-      <a href="integrantes.html">Integrantes</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contato.html">Contato</a>
-      <a href="info.html">Info+</a>
-    </nav>
-  </header>
-  
-
-
-    <footer>
-    <p>2025 Projeto Contra Queimadas — Todos os direitos reservados.</p>
-    <p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
-  </footer>
-    <script src="script.js"></script>
+	<header class="topo">
+		<div class="logo">
+			<img src="images/logos/Logo-MLG.jpeg" alt="Logo da equipe" />
+		</div>
+		<nav class="menu-main">
+			<a href="index.html">Home</a>
+			<a href="integrantes.html">Integrantes</a>
+			<a href="faq.html">FAQ</a>
+			<a href="contato.html">Contato</a>
+			<a href="aprenda.html">Aprenda </a>
+		</nav>
+	</header>
+	<section class="faq-topo">
+		<h1>Seja Bem-Vindo ao nosso FAQ</h1>
+		<h2>Precisa de ajuda?</h2>
+		<input type="text" placeholder="Encontre respostas para suas perguntas">
+	</section>
+	<section class="faq-conteudo">
+		<h2>Perguntas frequentes</h2>
+		<div class="faq-lista">
+			<div class="faq-item">
+				<button class="faq-pergunta">❓O que é o projeto?</button>
+				<div class="faq-resposta">Nosso projeto é uma solução baseada em IoT (Internet das Coisas), que utiliza
+					sensores para monitorar variáveis ambientais (temperatura, umidade do ar, CO₂, entre outros) e
+					detectar riscos de incêndios florestais de forma antecipada. Os dados são analisados em tempo real,
+					e alertas são enviados para usuários e autoridades.</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓Quais variáveis são monitoradas?</button>
+				<div class="faq-resposta">Atualmente monitoramos:
+					<li>Temperatura do ar</li>
+					<li>Umidade relativa do ar</li>
+					<li>Níveis de gases (como CO₂)</li>
+					<li>Velocidade do vento (opcional)</li>
+					<p>Essas variáveis ajudam a identificar se o ambiente está propenso a queimadas.</p>
+				</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓Como os dados são coletados?</button>
+				<div class="faq-resposta">Os dados são coletados por sensores instalados em áreas estratégicas. Esses
+					sensores capturam informações ambientais e enviam para um servidor central onde são analisadas.
+				</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓O sistema emite alertas?</button>
+				<div class="faq-resposta">Sim. Quando os dados indicam um risco elevado, o sistema envia alertas em
+					tempo real para os usuários cadastrados e pode também notificar órgãos de proteção ambiental e
+					defesa civil.</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓Onde posso acessar os alertas?</button>
+				<div class="faq-resposta">Os alertas são acessados por meio de:
+					<li>Aplicativo mobile (em desenvolvimento)</li>
+					<li>Painel web</li>
+					<li>Chatbot no Telegram (com suporte a texto e voz)</li>
+				</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓O sistema usa inteligência artificial?</button>
+				<div class="faq-resposta">Sim. Utilizamos IA para classificar os níveis de risco com base nos dados
+					recebidos. Além disso, um chatbot foi desenvolvido para ajudar os usuários com dúvidas e instruções
+					em situações de risco.</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓Onde o sistema pode ser implantado?</button>
+				<div class="faq-resposta">O sistema pode ser implantado em:
+					<li>Áreas florestais</li>
+					<li>Parques urbanos</li>
+					<li>Propriedades rurais</li>
+					<li>Regiões com histórico de queimadas</li>
+				</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓O projeto é acessível?</button>
+				<div class="faq-resposta">Nosso objetivo é criar uma solução de baixo custo, com sensores simples e
+					tecnologia de código aberto, para que possa ser replicada em diferentes comunidades.</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓Como funciona em locais sem internet?</button>
+				<div class="faq-resposta">Estamos estudando alternativas como:
+					<li>Comunicação via rádio (LoRa)</li>
+					<li>Armazenamento local com envio periódico</li>
+					<li>Integração com redes móveis (GSM) ou Wi-Fi comunitário</li>
+				</div>
+			</div>
+			<div class="faq-item">
+				<button class="faq-pergunta">❓Posso interagir com o sistema?</button>
+				<div class="faq-resposta">Sim! Criamos um chatbot inteligente que responde dúvidas como:
+					<li>"Qual o risco de incêndio na minha região?”</li>
+					<li>"O que fazer em caso de fumaça?”</li>
+					<li>"Como prevenir queimadas na seca?”</li>
+				</div>
+			</div>
+	</section>
+	<footer>
+		<p>2025 Projeto Contra Queimadas — Todos os direitos reservados.</p>
+		<p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
+	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
