@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #000000;
+}
+
+.obrigado {
+  background-color: #000000;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 15%;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  
+}
+
+.obrigado h1 {
+  color: rgb(0, 255, 0);
+}
+
+.voltar {
+  display: inline-block;
+  margin-top: 20px;
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+
+}
+
+.voltar:hover {
+  color: #007900;
+}
