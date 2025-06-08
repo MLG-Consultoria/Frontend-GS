@@ -1,14 +1,110 @@
-<!DOCTYPE html>
+<!DOCTYPE html>Add commentMore actions
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="conteudo-integrantes.css">
-    <title>Integrantes</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipe - Projeto Contra Queimadas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/conteudo-integrantes.css" />
+    <link rel="stylesheet" href="css/responsividade.css">
 </head>
-<body>
+
+<body class="transicao">
+    <header class="topo">
+        <div class="logo">
+            <img src="images/logos/Logo-MLG.jpeg" alt="Logo da equipe" />
+        </div>
+        <nav class="menu-main">
+            <a href="index.html">Home</a>
+            <a href="integrantes.html">Integrantes</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contato.html">Contato</a>
+            <a href="aprenda.html">Aprenda </a>
+        </nav>
+    </header>
     
-    <script src="script.js"></script>
-</body>
-</html>
+ <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+        
+        <nav class="nav-cell" id="nav-cell"> 
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="integrantes.html">Integrantes</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="aprenda.html">Info+</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu-bg" id="menu-bg"> </div>
+  
+    <main>
+        <h1>Nossa Equipe</h1>
+        <section class="equipe">
+            <!-- CARD 1 -->
+            <div class="card">
+                <img class="foto" src="images/integrantes/GiovaneS_Integrantes.jfif"
+                    alt="Foto Integrante Giovane Amato" />
+                <div class="info">
+                    <h3>Giovane Amato dos Santos</h3>
+                    <p>RM: 561336</p>
+                    <p>Turma: 1TDSPK</p>
+                    <div class="links">
+                        <a href="https://github.com/RuralGiovane" target="_blank">
+                            <img src="images/icones/icone-github.png" alt="Icone do GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/giovane-amato-276217306" target="_blank">
+                            <img src="images/icones/icone-linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <img class="foto" src="images/integrantes/LucasV_Integrantes.jfif" alt="Foto Integrante Lucas Vieira" />
+                <div class="info">
+                    <h3>Lucas Figueiredo Vieira</h3>
+                    <p>RM: 561342</p>
+                    <p>Turma: 1TDSPK</p>
+                    <div class="links">
+                        <a href="https://github.com/DevLuqinhas" target="_blank">
+                            <img src="images/icones/icone-github.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/devlucasvieira/" target="_blank">
+                            <img src="images/icones/icone-linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+                <img class="foto" src="images/integrantes/MatheusR_Integrantes.jfif"
+                    alt="Foto Integrante Matheus Roque" />
+                <div class="info">
+                    <h3>Matheus Roque Arantes</h3>
+                    <p>RM: 561959</p>
+                    <p>Turma: 1TDSPK</p>
+                    <div class="links">
+                        <a href="https://github.com/roque-arantes" target="_blank">
+                            <img src="images/icones/icone-github.png" alt="GitHub">
+                        </a>
+                        <a href="https://www.linkedin.com/in/matheus-roque-arantes-446280328/" target="_blank">
+                            <img src="images/icones/icone-linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 Projeto Contra Queimadas — Todos os direitos reservados.</p>
+        <p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
+    </footer>
