@@ -21,7 +21,23 @@
         <a href="info.html">Info+</a>
       </nav>
     </header>
-
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+        <nav class="nav-cell" id="nav-cell"> 
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="info.html">Info+</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="menu-bg" id="menu-bg"> </div>
       <main class="conteudo">
       <h1>Bem-vindo ao Projeto Contra Queimadas</h1>
       <div class="banner">
@@ -66,6 +82,13 @@
               t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
               document.head.appendChild(t);
           });
+      </script>
+      <script>
+      function menuOnClick() {
+        document.getElementById("menu-bar").classList.toggle("change");
+        document.getElementById("nav-cell").classList.toggle("change");
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
       </script>
   </body>
 </html>
