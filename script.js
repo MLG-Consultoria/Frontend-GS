@@ -1,3 +1,25 @@
+/*--------------------Código para as caixinhas de perguntas no faq*--------------------*/
+document.querySelectorAll('.faq-pergunta').forEach(botao => {
+  botao.addEventListener('click', () => {
+    const item = botao.closest('.faq-item');
+    const resposta = item.querySelector('.faq-resposta');
+
+    const estaAberto = resposta.classList.contains('aberto');
+
+    // Fecha todos
+    document.querySelectorAll('.faq-resposta').forEach(r => {
+      r.classList.remove('aberto');
+      r.style.maxHeight = null;
+    });
+
+    // Abre apenas o clicado
+    if (!estaAberto) {
+      resposta.classList.add('aberto');
+      resposta.style.maxHeight = resposta.scrollHeight + 'px';
+    }
+  });
+});
+
 /*--------------------Código do Formulario de Contato--------------------*/
 document.getElementById("form-contato").addEventListener("submit", function (e) {
   e.preventDefault();
@@ -23,3 +45,8 @@ document.getElementById("form-contato").addEventListener("submit", function (e) 
 
   window.location.href = "obrigado.html";
 });
+
+/*--------------------Código para as caixinhas no index--------------------*/
+function toggleSobre(caixa) {
+  caixa.classList.toggle('ativo');
+}
