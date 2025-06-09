@@ -51,6 +51,19 @@
       <p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
     </footer>
     <script src="script.js"></script>
+        <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "8fc2d0fe-485b-43e1-bb4a-6502458358f5", // Id da Integração.
+            region: "us-south", // Região que a integração está hosteada.
+            serviceInstanceID: "b7f80f13-1886-4379-adc3-2452b791946c", // Id da instância de serviço.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
 </html>
 </body>
 </html>
