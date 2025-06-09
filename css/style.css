@@ -73,8 +73,150 @@ footer {
   margin-top: 20px;
 }
 
-/*Secção para estilização do menu haburguer que será feito futuramente*/
+/*Secção para transição de tela*/
+/*Trasição de páginas*/
+.transicao {
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.2s ease;
+}
 
+.transicao.mostrar {
+  opacity: 1;
+}
+
+.menu-main a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 30px;
+  position: relative;
+  padding: 5px;
+  gap: 20px
+}
+
+/*Hover original + destaque com sublinhado animado*/
+.menu-main a:hover {
+  color: #48ff00;
+  transition: color 0.3s;
+}
+
+/*Sublinhado personalizado com animação*/
+.menu-main a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #48ff00;
+  transition: width 0.3s ease;
+}
+
+
+/*Secção para estilização do menu haburguer que será feito futuramente*/
+/*menu Hamburguer*/
+.menu-main a:hover::after {
+  width: 100%;
+}
+
+#menu {
+  z-index: 2;
+}
+  
+#menu-bar {
+  width: 40px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 70%;
+  background-color: rgb(0, 255, 0);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+  }
+  
+#bar3 {
+    transform: translateY(4px);
+}
+  
+.nav-cell {
+  transition: 0.3s ease;
+  display: none;
+}
+  
+.nav-cell ul {
+  padding: 0 22px;
+}
+  
+.nav-cell li {
+  list-style: none;
+  padding: 12px 0;
+}
+  
+.nav li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+  
+.nav-cell li a:hover {
+  font-weight: bold;
+  color: rgb(0, 255, 0);
+}
+
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 100vh;
+  margin: 30px 0 20px 20px;
+  background: #000;
+  transition: 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.menu-bg, #menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.change {
+  display: block;
+}
+  
+.change .bar {
+  background-color: rgb(0, 255, 0);
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+  
+.change #bar2 {
+  opacity: 0;
+}
+  
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+  
+.change-bg {
+  width: 75vw;
+  height: 100%;
+  transform: translate(-60%,-30%);
+}
 
 
 /*SECÇÃO PARA RESPONSIVIDADE APENAS*/
