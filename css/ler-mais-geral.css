@@ -1,0 +1,114 @@
+.logo{
+margin: 0 auto;
+}
+
+.topo1 {
+  background-color: #000;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo1 img {
+  margin: left auto;
+  height: 150px;
+  margin-left: 20px;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.botao {
+  display: flex;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 2px solid #00ff0d00;
+}
+
+.educacao-intro {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1C1C1C;
+  color: #00ff00;
+  margin: 0 auto;
+}
+
+.artigos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #2b2a2a00;
+  margin: 0 auto;
+}
+  
+.card-educacao {
+  background-color: #000;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+  
+.card-educacao h2 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: #00ff00;
+}
+  
+.card-educacao p {
+  font-size: 14px;
+  color: #ffffff;
+}
+  
+.card-educacao a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ff00;
+  text-decoration: none;
+  font-weight: bold;
+}
+  
+.card-educacao:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 255, 0, 0.704);
+}
+
+.voltar {
+  background-color: #000;
+  color: #00ff00;
+  border-radius: 12px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.5);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.voltar a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+.voltar:hover {
+  transform: scale(1.05);
+}
+
+.centraliza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
