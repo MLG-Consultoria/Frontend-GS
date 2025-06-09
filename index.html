@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/conteudo-index.css">
-  <title>Página Inicial</title>
-</head>
-<body>
-  <header class="topo">
-    <div class="logo">
-      <img src="images/logos/Logo-MLG.jpeg" alt="Logo da equipe" />
-    </div>
-
-    <nav class="menu-main">
-      <a href="index.html">Home</a>
-      <a href="integrantes.html">Integrantes</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contato.html">Contato</a>
-      <a href="info.html">Info+</a>
-    </nav>
-  </header>
-
-    <main class="conteudo">
-    <h1>Bem-vindo ao Projeto Contra Queimadas</h1>
-    <div class="banner">
-      <img src="images/outros/floresta.jpg" alt="Banner principal" class="Banner">
-    </div>
-    <div class="sobre-container">
-      <div class="sobre" onclick="toggleSobre(this)">
-        <h3>Sobre o Projeto – Guardião Verde</h3>
-        <p>O projeto utiliza dispositivos IoT para monitorar em tempo real fatores como temperatura, umidade e gases de
-          combustão, identificando riscos de incêndio. Os dados são processados por algoritmos que emitem alertas para
-          moradores e autoridades. Além disso, um chatbot via Telegram e web permite consultas sobre o risco na região,
-          dicas de prevenção e orientações em emergências. A iniciativa promove prevenção e educação ambiental por meio
-          de uma plataforma acessível e de baixo custo. A solução é escalável e pode ser aplicada em diversas regiões
-          vulneráveis.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/conteudo-index.css">
+    <title>Página Inicial</title>
+  </head>
+  <body class="transicao">
+    <header class="topo">
+      <div class="logo">
+        <img src="images/logos/Logo-MLG.jpeg" alt="Logo da equipe" />
       </div>
-      <div class="sobre" onclick="toggleSobre(this)">
-        <h3>Tecnologias Utilizadas</h3>
-        <p>Sensores ambientais (IoT)</p>
-        <p>Ánalise de dados em tempo real</p>
-        <p>Chatbot com IBM Watson Assistant</p>
-        <p>Integração com Webchat e Telegram (STT e TTS)</p>
-        <p>Front-end responsivo em HTML/CSS/JS</p>
-        <p>Aplicações em Python e Java</p>
-        <p>Banco de dados relacional</p>
+
+      <nav class="menu-main">
+        <a href="index.html">Home</a>
+        <a href="integrantes.html">Integrantes</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contato.html">Contato</a>
+        <a href="info.html">Info+</a>
+      </nav>
+    </header>
+
+      <main class="conteudo">
+      <h1>Bem-vindo ao Projeto Contra Queimadas</h1>
+      <div class="banner">
+        <img src="images/outros/floresta.jpg" alt="Banner principal" class="Banner">
       </div>
-    </div>
-  </main>
-  <footer>
-    <p>2025 Projeto Contra Queimadas — Todos os direitos reservados.</p>
-    <p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
-  </footer>
-  <script src="script.js"></script>
-      <script>
-        window.watsonAssistantChatOptions = {
-            integrationID: "8fc2d0fe-485b-43e1-bb4a-6502458358f5", // Id da Integração.
-            region: "us-south", // Região que a integração está hosteada.
-            serviceInstanceID: "b7f80f13-1886-4379-adc3-2452b791946c", // Id da instância de serviço.
-            onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function () {
-            const t = document.createElement('script');
-            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-            document.head.appendChild(t);
-        });
-    </script>
-</body>
+      <div class="sobre-container">
+        <div class="sobre" onclick="toggleSobre(this)">
+          <h3>Sobre o Projeto – Guardião Verde</h3>
+          <p>O projeto utiliza dispositivos IoT para monitorar em tempo real fatores como temperatura, umidade e gases de
+            combustão, identificando riscos de incêndio. Os dados são processados por algoritmos que emitem alertas para
+            moradores e autoridades. Além disso, um chatbot via Telegram e web permite consultas sobre o risco na região,
+            dicas de prevenção e orientações em emergências. A iniciativa promove prevenção e educação ambiental por meio
+            de uma plataforma acessível e de baixo custo. A solução é escalável e pode ser aplicada em diversas regiões
+            vulneráveis.</p>
+        </div>
+        <div class="sobre" onclick="toggleSobre(this)">
+          <h3>Tecnologias Utilizadas</h3>
+          <p>Sensores ambientais (IoT)</p>
+          <p>Ánalise de dados em tempo real</p>
+          <p>Chatbot com IBM Watson Assistant</p>
+          <p>Integração com Webchat e Telegram (STT e TTS)</p>
+          <p>Front-end responsivo em HTML/CSS/JS</p>
+          <p>Aplicações em Python e Java</p>
+          <p>Banco de dados relacional</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>2025 Projeto Contra Queimadas — Todos os direitos reservados.</p>
+      <p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
+    </footer>
+    <script src="script.js"></script>
+        <script>
+          window.watsonAssistantChatOptions = {
+              integrationID: "8fc2d0fe-485b-43e1-bb4a-6502458358f5", // Id da Integração.
+              region: "us-south", // Região que a integração está hosteada.
+              serviceInstanceID: "b7f80f13-1886-4379-adc3-2452b791946c", // Id da instância de serviço.
+              onLoad: async (instance) => { await instance.render(); }
+          };
+          setTimeout(function () {
+              const t = document.createElement('script');
+              t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+          });
+      </script>
+  </body>
 </html>
