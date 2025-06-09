@@ -1,0 +1,116 @@
+/*CSS: CONTEUDO DO INDEX/PÁGINA PRINCIPAL*/
+
+/*Estliza "toda a página" */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1C1C1C;
+}
+
+h1{
+  margin-top: 30px ;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/*Responsividade especifica pro h1 dessa página*/
+@media (max-width: 820px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+}
+
+/*imagem no index*/
+.banner{
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 20px;
+  border: rgb(9, 255, 0) 2px solid;
+}
+.banner img{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}   
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+/*Caixas*/
+.sobre-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.sobre {
+  width: 500px;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 255, 0, 0.221);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100px;
+  margin-bottom: 20px;
+  align-content: center;
+}
+
+.sobre:hover {
+  box-shadow: 0 8px 16px rgba(0, 255, 0, 0.500);
+  transform: translateY(-4px);
+  transition: all 0.3s ease;
+}
+
+.sobre p {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.sobre.ativo {
+  height: auto;
+}
+
+.sobre.ativo p {
+  opacity: 1;
+  max-height: 500px;
+  margin-top: 10px;
+  
+}
+
+.conteudo {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.sobre-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
