@@ -1,3 +1,42 @@
+/*--------------------Código para transição de página*--------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+  const elemento = document.querySelector(".transicao");
+
+  // Adiciona a classe 'mostrar' após um pequeno delay para ativar o fade-in
+  setTimeout(() => {
+    elemento.classList.add("mostrar");
+  }, 100); // Delay curto para garantir que a transição seja perceptível
+
+  // Seleciona todos os links normais que fazem navegação
+  const links = document.querySelectorAll("a[href]:not([href^='#']):not([target])");
+
+  links.forEach(link => {
+    link.addEventListener("click", (e) => {
+      const destino = link.href;
+
+      e.preventDefault();
+
+      // Remove a classe 'mostrar' para acionar o fade-out
+      elemento.classList.remove("mostrar");
+
+      // Aguarda a duração da transição antes de navegar
+      setTimeout(() => {
+        window.location.href = destino;
+      }, 500); // Tempo deve ser um pouco maior que o transition do CSS
+    });
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("mostrar");
+  });
+});
+
 /*--------------------Código para as caixinhas de perguntas no faq*--------------------*/
 document.querySelectorAll('.faq-pergunta').forEach(botao => {
   botao.addEventListener('click', () => {
