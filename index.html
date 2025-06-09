@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/conteudo-index.css">
-    <title>Página Principal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/conteudo-index.css">
+  <title>Página Inicial</title>
 </head>
 <body>
   <header class="topo">
@@ -22,11 +22,37 @@
     </nav>
   </header>
 
-
-    <footer>
+    <main class="conteudo">
+    <h1>Bem-vindo ao Projeto Contra Queimadas</h1>
+    <div class="banner">
+      <img src="images/outros/floresta.jpg" alt="Banner principal" class="Banner">
+    </div>
+    <div class="sobre-container">
+      <div class="sobre" onclick="toggleSobre(this)">
+        <h3>Sobre o Projeto – Guardião Verde</h3>
+        <p>O projeto utiliza dispositivos IoT para monitorar em tempo real fatores como temperatura, umidade e gases de
+          combustão, identificando riscos de incêndio. Os dados são processados por algoritmos que emitem alertas para
+          moradores e autoridades. Além disso, um chatbot via Telegram e web permite consultas sobre o risco na região,
+          dicas de prevenção e orientações em emergências. A iniciativa promove prevenção e educação ambiental por meio
+          de uma plataforma acessível e de baixo custo. A solução é escalável e pode ser aplicada em diversas regiões
+          vulneráveis.</p>
+      </div>
+      <div class="sobre" onclick="toggleSobre(this)">
+        <h3>Tecnologias Utilizadas</h3>
+        <p>Sensores ambientais (IoT)</p>
+        <p>Ánalise de dados em tempo real</p>
+        <p>Chatbot com IBM Watson Assistant</p>
+        <p>Integração com Webchat e Telegram (STT e TTS)</p>
+        <p>Front-end responsivo em HTML/CSS/JS</p>
+        <p>Aplicações em Python e Java</p>
+        <p>Banco de dados relacional</p>
+      </div>
+    </div>
+  </main>
+  <footer>
     <p>2025 Projeto Contra Queimadas — Todos os direitos reservados.</p>
     <p>Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.</p>
   </footer>
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
